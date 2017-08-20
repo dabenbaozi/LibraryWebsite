@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.password">54lilygl</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/webfinalv2</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="show_sql">true</property>
+		 
+		<!-- <property name="hbm2ddl.auto">create</property> -->
+		 
+		<mapping class="com.Li.pojos.roles.User" />
+    	<mapping class="com.Li.pojos.roles.Admin" />	
+    	<mapping class="com.Li.pojos.roles.UEmail" />
+    	<mapping class="com.Li.pojos.roles.LibraryMember" />
+    	
+
+    	<mapping class="com.Li.pojos.inventory.Book" />
+    	<mapping class="com.Li.pojos.inventory.Movie" />
+    	<mapping class="com.Li.pojos.inventory.Music" />
+    	<mapping class="com.Li.pojos.inventory.Inventory" />
+    	<mapping class="com.Li.pojos.inventory.Event" />
+    
+
+	</session-factory>
+</hibernate-configuration>
